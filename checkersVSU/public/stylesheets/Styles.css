@@ -1,0 +1,164 @@
+h1 {
+    color: black;
+    margin-bottom: 0px;
+    margin-left: 72px;
+}
+input[type="checkbox"] {
+    border: 0px;
+    background-color: #808080;
+    outline: none;
+}
+a {
+    color : #000;
+    text-decoration: none;
+    display: block;
+}
+.loginform {
+    margin-top: 0px;
+    width: 280px;
+    border : 10px solid black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    padding: 0px;
+    height: 230px;
+}
+.registerform {
+    height: 370px;
+}
+
+.formcontainer {
+    margin-top: 155px;
+    margin-left: 40%;
+}
+.textinput {
+    width: 245px;
+    height: 25px;
+    padding: 2px;
+    margin: 0px 8px 0 8px;
+    background-color: #808080;
+    border: 0px;
+    outline: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;
+	cursor: default;
+}
+.labelinput {
+    margin: 20px 8px 0px 10px;
+    color: #000000;
+    font-size: 18px;
+}
+.registr {
+    padding-left: 15px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    font-size: 15px;
+
+}
+
+.submitbutlog {
+    margin-top: 2px;
+    margin-left: 180px;
+    width: 70px;
+    height: 30px;
+    border: 5px solid black;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    color: black;
+    background-color: lightgrey;
+    outline: none;
+}
+
+.submitbutreg {
+    width: 147px;
+    margin-left: 125px;
+}
+
+.checkbox {
+    margin: 5px 0px 10px 10px;
+}
+.menu {
+    display: block;
+    width: 280px;
+    height: 250px;
+    border: 10px solid black;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -khtml-border-radius: 15px;
+
+}
+.wrappermenu {
+    margin-top: 45px;
+}
+.menubuttons {
+    width: 230px;
+    border: 8px solid black;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    margin-left: 18px;
+    margin-bottom: 30px;
+    background-color: lightgrey;
+    text-align: center  ;
+}
+.battlefieldcont {
+    margin-left: 33%;
+    margin-top: 40px;
+}
+.battlefield {
+    margin: 0px;
+    width:560px;
+    height: 560px;
+    border-spacing: 0px;
+    border: 10px solid black;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -khtml-border-radius: 15px;
+}
+.battlefield td {
+    border: 0px;
+    margin: 0px;
+}
+.battlefield tr:nth-child(odd) td:nth-child(even) {
+    background-color: #333333;
+}
+.battlefield tr:nth-child(even) td:nth-child(odd) {
+    background-color: #333333;
+}
+.surrenderbtn {
+    width: 80px;
+    border: 8px solid black;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    text-align: center;
+    margin-left: 235px;
+    margin-top: 10px;
+}
+.score {
+    width: 80px;
+    margin-left: 260px;
+    padding-bottom: 10px;
+}
+.scorevalue {
+    margin-left: 149px;
+}
+.player2 {
+    padding-left: 97px;
+}
+.scorevalue, .player1, .player2 {
+    display: inline-block;
+}
+.score, .player1, .player2, .scorevalue {
+    font-size: 20px;
+    font-weight: bold;
+}

@@ -1,0 +1,195 @@
+body {
+  background-color:#ffffff;
+}
+
+.pages {
+  margin: 0;
+  padding: 0;
+  
+}
+
+h1 {
+    color: black;
+    margin-bottom: 10px;
+    margin-left: 72px;
+}
+
+a {
+    color : #000;
+    text-decoration: none;
+    display: block;
+	cursor: pointer;
+}
+
+.formcontainer {
+    margin-top: 155px;
+    margin-left: 40%;
+}
+
+.loginform {
+    margin-top: 0px;
+    width: 265px;
+    border : 10px solid black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    padding: 0px;
+    height: 180px;
+}
+
+.labelinput {
+    margin: 10px 8px 5px 10px;
+    color: #000000;
+    font-size: 18px;
+	cursor: default;
+}
+
+.textinput {
+    width: 245px;
+    height: 25px;
+    padding: 5px;
+    margin: 0px 8px 0 8px;
+    background-color: #808080;
+    border: 0px;
+    outline: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;
+	cursor: default;
+}
+
+.lrlink {
+	width:100px;
+    padding-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+.submitbutlog {
+    margin-left: 182px;
+    width: 70px;
+    height: 30px;
+    border: 5px solid black;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    color: black;
+    background-color: lightgrey;
+    outline: none;
+}
+
+/* rating */
+
+.rating{
+	padding-left:35px;
+	padding-top:20px;
+	padding-bottom:10px;
+    display: block;
+    width: 280px;
+    border: 10px solid black;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -khtml-border-radius: 15px;
+}
+
+#ratingtable{
+	border-collapse:collapse;
+}
+
+th{
+	text-align:center;
+	height:15px;
+	border-bottom:	2px solid black;
+}
+
+th:first-child,.td:first-child{
+	width:90px;
+}
+
+th:nth-child(2),.td:nth-child(2){
+	width:150px;
+	border-left:2px solid black;
+}
+
+.td{
+	text-align:center;
+}
+
+/* regiser */
+
+.registerform {
+    height: 240px;
+}
+
+.submitbutreg {
+    width: 159px;
+    margin-left: 95px;
+}
+
+.submitbutreg:hover , .submitbutlog:hover{
+	background-color: #DCDCDC;
+}
+
+/* menu */
+
+.menu {
+    display: block;
+    width: 280px;
+    height: 250px;
+    border: 10px solid black;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -khtml-border-radius: 15px;
+
+}
+
+.wrappermenu {
+    margin-top: 45px;
+}
+
+.menubuttons {
+    width: 230px;
+    border: 8px solid black;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    margin-left: 18px;
+    margin-bottom: 30px;
+    background-color: lightgrey;
+    text-align: center  ;
+}
+
+.about{
+	cursor:pointer;
+}
+
+
+#Username1{
+	
+}
+
+#Username2{
+	
+}
+
+#clr{
+	
+}
+
+.battlefield {
+  margin-top: 10%;
+  border-spacing: 0px;
+  border: 10px solid black;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  border-collapse: separate;
+}

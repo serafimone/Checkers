@@ -1,0 +1,116 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/sweet-alert.css">
+    <script src="javascripts/sweet-alert.js"></script>
+    <script src="javascripts/game.js"></script>
+    <title>Шашки</title>
+</head>
+<body>
+<ul class="pages">
+    <li class="gamepage">
+        <div class="wrapper" align="center">
+		<div id="Username1"></div>
+		<div id='clr'></div>
+		<div id='Username2'>Ждем соперника</div>
+                
+            <table noborder="">
+                <tbody>
+                <tr>
+                    <td>
+                        <script language="JavaScript">
+                            document.open();
+                            document.writeln("<table class='battlefield' bgcolor=#333333>");
+                            for (i = 0; i < size; i++){
+                                document.writeln("<tr>");
+                                for (j = 0; j < size; j++){
+                                    if ((i + j) % 2 == 0){
+                                        document.write("<td id=\"bgcolor_" + i + "_" + j + "\" bgcolor=#ffffff><img id=\"img_" + i + "_" + j + "\" src=\"images\invisible.gif\" border=0></td>");
+                                    }
+                                    else{
+                                        document.write("<td id=\"bgcolor_" + i + "_" + j + "\" bgcolor=#333333><img id=\"img_" + i + "_" + j + "\" src=\"images\invisible.gif\" border=0></td>");
+                                    }
+                                }
+                                document.writeln("</tr>");
+                            }
+                            document.writeln("</table>");
+                            document.close();
+                        </script>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+			<input style ="margin-top:15px;" class="submitbutlog" type="button" onclick="giveUp()" value="Сдаться">
+        </div>
+    </li>
+	
+    <li class="loginpage">
+        <div class="formcontainer">
+            <h1>ШАШКИ</h1>
+            <form class="loginform">
+                <p class="labelinput">Логин</p>
+                <input class="loginInput textinput" type="text" name="login">
+                <p class="labelinput">Пароль</p>
+                <input class="passwordInput textinput" type="password" name="password"> <br>
+                <p class="lrlink"><a onclick="registerClick()">Регистрация...</a></p> 
+				<input class="submitbutlog" type="button" onclick="auth()" value="Войти">
+            </form>
+        </div>
+    </li>
+	
+    <li class="menupage">
+        <div class="formcontainer menu">
+            <div class="wrappermenu">
+                <div class="menubuttons"><a href="#" onclick="joinGame()">Новая игра</a></div>
+                <div class="menubuttons"><a href="#" onclick="showRating()">Рейтинг</a></div>
+                <div class="menubuttons"><span class="about">Об игре</span></div>
+            </div>
+        </div>
+    </li>
+	
+	<li class="ratingpage">
+        <div class="formcontainer">
+			<h1 style = "margin-left: 90px;">РЕЙТИНГ</h1>
+			<div class="rating">
+				<table id="ratingtable">
+				</table>
+				<input style ="margin-top:15px;" class="submitbutlog" type="button" onclick="back()" value="Назад">			
+			</div>
+		</div>
+    </li>
+	
+    <li class="regpage">
+        <div class="formcontainer">
+            <h1>ШАШКИ</h1>
+            <form name="registerform" class="loginform registerform">
+                <p class="labelinput">Логин</p>
+                <input class="loginReg textinput" name="login" type="text">
+                <p class="labelinput">Пароль</p>
+                <input class="passwordReg textinput" name="pass"type="password">
+                <p class="labelinput">Подтвердите пароль</p>
+                <input class="passwordRegConf textinput" name="confpass" type="password">
+				<p class="lrlink"><a onclick="backClick()">Назад...</a></p>
+                <input class="submitbutlog submitbutreg" type="button" onclick="register()" value="Зарегистрироваться">
+            </form>
+        </div>
+    </li>
+	
+</ul>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="javascripts/init.js"></script>
+<script src="javascripts/cookie.js"></script>
+<script>
+    document.querySelector('span.about').onclick = function(){
+        swal({
+                    title: "Об игре",
+                    text: "Данное приложение реализует онлайн игру в шашки. Все правила соответствуют правилам настольного аналога. Приятной игры.",
+                    confirmButtonText: "Закрыть"
+                }
+        );
+    };
+</script>
+</body>
+</html>
